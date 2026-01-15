@@ -11,7 +11,7 @@ configDotenv();
 
 ffmpeg.setFfmpegPath(ffmpegPath)
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: 'https://smart-b-roll-video-inserter-2-0.vercel.app/',
 };
 const upload = multer({ dest: 'uploads/' });
 const app = express();

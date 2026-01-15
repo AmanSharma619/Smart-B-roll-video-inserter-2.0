@@ -61,8 +61,8 @@ Smart B-roll video inserter/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/AmanSharma619/Smart-B-roll-video-inserter.git
-cd Smart-B-roll-video-inserter
+git clone https://github.com/AmanSharma619/Smart-B-roll-video-inserter-2.0.git
+cd Smart-B-roll-video-inserter-2.0
 ```
 
 ---

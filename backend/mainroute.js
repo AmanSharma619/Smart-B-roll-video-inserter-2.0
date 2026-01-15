@@ -6,6 +6,8 @@ import ffmpegPath from "ffmpeg-static"
 import { transcribe, segments } from "./services/transcribe.js";
 import { convert_to_context } from "./services/b_roll_to_context.js";
 import { generateTimeline } from "./services/timeline_generator.js";
+import { configDotenv } from "dotenv";
+configDotenv();
 
 ffmpeg.setFfmpegPath(ffmpegPath)
 const corsOptions = {
@@ -58,6 +60,6 @@ app.post(
   }
 );
 
-app.listen(3000, ()=>{
-    console.log("Server is running on port 3000");
+app.listen(process.env.PORT || 3000, ()=>{
+    console.log(`Server is running on port ${process.env.PORT || 3000}`);
 })

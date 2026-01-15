@@ -53,7 +53,7 @@ const Home = () => {
       formData.append('b_rolls', bRoll.file);
     });
     try {
-      const request= await axios.post('http://localhost:3000/upload', formData);
+      const request= await axios.post('https://smart-b-roll-video-inserter-20-production.up.railway.app/upload', formData);
       const response= request.data;
       console.log(response);
       
